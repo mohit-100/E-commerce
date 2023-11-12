@@ -43,12 +43,12 @@ function Cart() {
   const shipping = parseInt(100);
 
   const grandTotal = shipping + totalAmout;
-  // console.log(grandTotal)
+  
 
   /**========================================================================
    *!                           Payment Intigration
    *========================================================================**/ 
-
+                                             
   const [name, setName] = useState("")
   const [address, setAddress] = useState("");
   const [pincode, setPincode] = useState("")
@@ -84,8 +84,8 @@ function Cart() {
     }
 
     var options = {
-      key: "",
-      key_secret: "",
+      key: "rzp_test_gjs1gwGQKn2OA1",
+      key_secret: "sSLnYJeWAmd01xEWZIUSowzm",
       amount: parseInt(grandTotal * 100),
       currency: "INR",
       order_receipt: 'order_rcptid_' + name,
